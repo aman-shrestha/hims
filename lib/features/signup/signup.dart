@@ -1,5 +1,7 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hims/routes/app_router.gr.dart';
 import 'package:hims/shared/theme/colors.dart';
 import 'package:hims/shared/theme/styles.dart';
 import 'package:hims/shared/widgets/smallbutton.dart';
@@ -7,6 +9,7 @@ import '../../shared/widgets/buttonLarge.dart';
 import '../../shared/widgets/customTextField.dart';
 import '../../shared/widgets/remember_me_view.dart';
 
+@RoutePage()
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
 
@@ -74,7 +77,12 @@ class SignUp extends StatelessWidget {
                 SizedBox(
                   height: 60,
                 ),
-                ButtonLarge(text: "Log in"),
+                GestureDetector(
+                  onTap: () {
+                    AutoRouter.of(context).push(OTPView());
+                  },
+                  child: ButtonLarge(text: "Log In "),
+                ),
                 SizedBox(
                   height: 60,
                 ),
@@ -86,7 +94,7 @@ class SignUp extends StatelessWidget {
                       style: smallStyle.copyWith(color: AppColors.gray),
                     ),
                     Text(
-                      " Sign up",
+                      " Sign Up",
                       style: TextStyle(color: Colors.lightBlue),
                     ),
                   ],

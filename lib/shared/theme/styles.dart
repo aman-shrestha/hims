@@ -4,6 +4,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'dimens.dart';
 
+//60
+TextStyle get biggStyle {
+  return GoogleFonts.inter(
+      textStyle: TextStyle(fontSize: AppDimens.big.sp, color: Colors.black));
+}
+
 //22
 TextStyle get largeStyle {
   return GoogleFonts.inter(
@@ -32,4 +38,10 @@ TextStyle get smallStyle {
 TextStyle get miniStyle {
   return GoogleFonts.inter(
       textStyle: TextStyle(fontSize: AppDimens.mini.sp, color: Colors.black));
+}
+
+//12
+TextStyle get tinyStyle {
+  return GoogleFonts.inter(
+      textStyle: TextStyle(fontSize: AppDimens.tiny.sp, color: Colors.black));
 }

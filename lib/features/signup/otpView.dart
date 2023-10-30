@@ -1,11 +1,14 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hims/features/signup/otpReusable.dart';
+import 'package:hims/routes/app_router.gr.dart';
 import 'package:hims/shared/theme/colors.dart';
 import 'package:hims/shared/theme/styles.dart';
 import 'package:hims/shared/widgets/buttonLarge.dart';
 import 'package:otp_text_field/otp_text_field.dart';
 
+@RoutePage()
 class OTPView extends StatelessWidget {
   const OTPView({super.key});
 
@@ -13,6 +16,7 @@ class OTPView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: Text(
           "OTP Verification",
           style: largeStyle.copyWith(fontWeight: FontWeight.w600),
@@ -62,7 +66,12 @@ class OTPView extends StatelessWidget {
                 SizedBox(
                   height: 28,
                 ),
-                ButtonLarge(text: "Verify")
+                GestureDetector(
+                  onTap: () {
+                    AutoRouter.of(context).push(UserDetailTabView());
+                  },
+                  child: ButtonLarge(text: "Verify"),
+                ),
               ],
             ),
           ),
