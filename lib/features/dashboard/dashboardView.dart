@@ -16,6 +16,12 @@ class DashboardView extends StatelessWidget {
           child: ProfileBar(title: "HELLO"),
         ),
         body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/himsBackgroundImage.png"),
+              fit: BoxFit.cover,
+            ),
+          ),
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(

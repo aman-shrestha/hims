@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hims/features/dashboard/dashboardView.dart';
 
 import '../../shared/theme/styles.dart';
 import '../../shared/widgets/customTextField.dart';
@@ -67,7 +68,14 @@ class ExperienceInfo extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SmallButtonWhite(title: "Back"),
-                  SmallButtonBlue(title: "Next")
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const DashboardView()));
+                      },
+                      child: SmallButtonBlue(title: "Next"))
                 ],
               )
             ],

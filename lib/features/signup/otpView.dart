@@ -8,7 +8,9 @@ import 'package:hims/shared/theme/styles.dart';
 import 'package:hims/shared/widgets/buttonLarge.dart';
 import 'package:otp_text_field/otp_text_field.dart';
 
-@RoutePage()
+import '../userDetail/UserDetailTabView.dart';
+
+// @RoutePage()
 class OTPView extends StatelessWidget {
   const OTPView({super.key});
 
@@ -16,10 +18,11 @@ class OTPView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: Colors.white,
         title: Text(
           "OTP Verification",
-          style: largeStyle.copyWith(fontWeight: FontWeight.w600),
+          style: mediumStyle.copyWith(fontWeight: FontWeight.w600),
         ),
       ),
       body: Container(
@@ -68,7 +71,11 @@ class OTPView extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    AutoRouter.of(context).push(UserDetailTabView());
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const UserDetailTabView()));
+                    // AutoRouter.of(context).push(UserDetailTabView());
                   },
                   child: ButtonLarge(text: "Verify"),
                 ),

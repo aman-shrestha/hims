@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hims/features/dashboard/medications.dart';
+import 'package:hims/features/dashboard/medications/medications.dart';
 import 'package:hims/features/dashboard/myHospital/myHospital.dart';
 import 'package:hims/features/dashboard/vitals/vitals.dart';
 import 'package:hims/shared/theme/colors.dart';

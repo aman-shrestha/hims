@@ -1,12 +1,12 @@
-import 'package:auto_route/auto_route.dart';
-import 'app_router.gr.dart';
+// import 'package:auto_route/auto_route.dart';
+// import 'app_router.gr.dart';
 
-@AutoRouterConfig()
-class AppRouter extends $AppRouter {
-  @override
-  List<AutoRoute> get routes => [
-        AutoRoute(page: SignUp.page, initial: true),
-        AutoRoute(page: UserDetailTabView.page),
-        AutoRoute(page: OTPView.page),
-      ];
-}
+// @AutoRouterConfig()
+// class AppRouter extends $AppRouter {
+//   @override
+//   List<AutoRoute> get routes => [
+//         AutoRoute(page: SignUp.page, initial: true),
+//         AutoRoute(page: UserDetailTabView.page),
+//         AutoRoute(page: OTPView.page),
+//       ];
+// }
