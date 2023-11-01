@@ -6,18 +6,23 @@ class CustomTextField extends StatelessWidget {
   final String text;
   final Icon icon;
   bool isObsecure;
-  CustomTextField(
-      {super.key,
-      required this.text,
-      required this.icon,
-      this.isObsecure = false});
+
+  CustomTextField({
+    super.key,
+    required this.text,
+    required this.icon,
+    this.isObsecure = false,
+  });
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      autofocus: true,
       decoration: InputDecoration(
         border: OutlineInputBorder(),
         hintText: text,
+        filled: true,
+        fillColor: Colors.white,
         hintStyle: smallStyle.copyWith(color: AppColors.gray),
         prefixIcon: icon,
         prefixIconColor: AppColors.gray,

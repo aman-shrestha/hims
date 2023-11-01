@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:hims/features/share/scanView.dart';
 import 'package:hims/features/share/shareButton.dart';
 import 'package:hims/shared/theme/colors.dart';
 import 'package:hims/shared/theme/styles.dart';
@@ -63,11 +64,22 @@ class ShareView extends StatelessWidget {
                       style: smallStyle.copyWith(
                           fontWeight: FontWeight.w700, color: Colors.white),
                     ),
-                    SvgPicture.asset("assets/images/qr.svg"),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.qr_code),
+                      iconSize: 160,
+                    ),
                     SizedBox(
                       height: 50,
                     ),
-                    ShareButton()
+                    GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ScanView()));
+                        },
+                        child: ShareButton()),
                   ],
                 ),
               ),

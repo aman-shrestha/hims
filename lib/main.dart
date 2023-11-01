@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hims/features/dashboard/dashboardView.dart';
+import 'package:hims/features/notice/noticeView.dart';
 import 'package:hims/features/share/shareView.dart';
 import 'package:hims/features/userDetail/profileInfo.dart';
 import 'package:hims/features/userDetail/UserDetailTabView.dart';
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SignUp(),
+      debugShowCheckedModeBanner: false,
+      home: NoticeView(),
     );
   }
 }

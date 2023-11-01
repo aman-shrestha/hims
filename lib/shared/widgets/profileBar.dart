@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 class ProfileBar extends StatelessWidget {
   final String title;
+  final bool leading;
 
   const ProfileBar({
     super.key,
     required this.title,
+    required this.leading,
   });
 
   @override
@@ -16,12 +18,15 @@ class ProfileBar extends StatelessWidget {
         style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),
       ),
       backgroundColor: Colors.white,
-      leading: Container(
-        width: 32,
-        height: 32,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(100.0), color: Colors.blue),
-      ),
+      leading: leading
+          ? Container(
+              width: 32,
+              height: 32,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100.0),
+                  color: Colors.blue),
+            )
+          : Container(),
       actions: [
         IconButton(
           onPressed: () {},

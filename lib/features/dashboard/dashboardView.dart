@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hims/features/dashboard/dashboardTabBar.dart';
-import 'package:hims/features/dashboard/profileBar.dart';
+import 'package:hims/shared/widgets/profileBar.dart';
 import 'package:hims/shared/theme/colors.dart';
 import 'package:hims/shared/theme/styles.dart';
 
@@ -13,7 +13,10 @@ class DashboardView extends StatelessWidget {
       home: Scaffold(
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(60),
-          child: ProfileBar(title: "HELLO"),
+          child: ProfileBar(
+            title: "HELLO",
+            leading: true,
+          ),
         ),
         body: Container(
           decoration: BoxDecoration(
