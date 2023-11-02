@@ -4,8 +4,9 @@ import 'package:hims/shared/theme/styles.dart';
 
 class CustomTextField extends StatelessWidget {
   final String text;
-  final Icon icon;
+  Icon icon;
   bool isObsecure;
+  // final bool iconData;
 
   CustomTextField({
     super.key,
@@ -24,6 +25,7 @@ class CustomTextField extends StatelessWidget {
         filled: true,
         fillColor: Colors.white,
         hintStyle: smallStyle.copyWith(color: AppColors.gray),
+        // prefixIcon: prefixIcon: icon,
         prefixIcon: icon,
         prefixIconColor: AppColors.gray,
         enabledBorder: OutlineInputBorder(

@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class ProfileBar extends StatelessWidget {
   final String title;
   final bool leading;
+  final Color? color;
 
   const ProfileBar({
     super.key,
     required this.title,
     required this.leading,
+    this.color = Colors.black,
   });
 
   @override
@@ -15,7 +17,7 @@ class ProfileBar extends StatelessWidget {
     return AppBar(
       title: Text(
         title,
-        style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),
+        style: TextStyle(color: color, fontWeight: FontWeight.w700),
       ),
       backgroundColor: Colors.white,
       leading: leading

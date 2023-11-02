@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hims/features/notice/noticeAll.dart';
-import 'package:hims/features/notice/noticeLatestNews.dart';
-import 'package:hims/features/notice/noticePress.dart';
+import 'package:hims/features/notice/noticeTabsVIews/noticeAll.dart';
+import 'package:hims/features/notice/noticeTabsVIews/noticeLatestNews.dart';
+import 'package:hims/features/notice/noticeTabsVIews/noticePress.dart';
 
 import '../../shared/theme/colors.dart';
 

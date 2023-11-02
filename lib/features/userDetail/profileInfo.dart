@@ -28,7 +28,10 @@ class ProfileInfo extends StatelessWidget {
               SizedBox(
                 height: 40,
               ),
-              CustomTextField(text: "First Name", icon: Icon(Icons.person)),
+              CustomTextField(
+                text: "First Name",
+                icon: Icon(Icons.person),
+              ),
               SizedBox(
                 height: 16,
               ),

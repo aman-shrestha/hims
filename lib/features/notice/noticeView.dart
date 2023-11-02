@@ -33,6 +33,9 @@ class NoticeView extends StatelessWidget {
                 text: "Recent announcements, events",
                 icon: Icon(Icons.search),
               ),
+              SizedBox(
+                height: 10,
+              ),
               Expanded(child: NoticeTabBar()),
             ],
           ),
