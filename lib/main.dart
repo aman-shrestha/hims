@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hims/features/dashboard/dashboardView.dart';
 import 'package:hims/features/notice/noticeTabsVIews/applyVacancy.dart';
 import 'package:hims/features/notice/noticeView.dart';
+import 'package:hims/features/profile/profile.dart';
 import 'package:hims/features/share/shareView.dart';
 import 'package:hims/features/userDetail/profileInfo.dart';
 import 'package:hims/features/userDetail/UserDetailTabView.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ApplyVacancy(),
+      home: Profile(),
       // NoticeView(),
     );
   }
