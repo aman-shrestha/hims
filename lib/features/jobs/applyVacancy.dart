@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:hims/features/notice/noticeTabsVIews/submitApplication.dart';
+import 'package:hims/features/jobs/submitApplication.dart';
 
 import 'package:hims/shared/theme/colors.dart';
 import 'package:hims/shared/theme/styles.dart';
 
-import '../../../shared/widgets/profileBar.dart';
-import '../../../shared/widgets/smallbutton.dart';
+import '../../shared/widgets/profileBar.dart';
+import '../../shared/widgets/smallbutton.dart';
 
 class ApplyVacancy extends StatelessWidget {
-  var title = "Auxiliary Health Worker (4th Level Assistant)";
+  var title = "Surgeon";
 
   var date = "14 Sep 2023";
   var jobDescription =
@@ -18,20 +18,22 @@ class ApplyVacancy extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60),
-        child: ProfileBar(
-          title: "Apply Vacancy",
-          color: AppColors.blue,
-          leading: false,
+      appBar: AppBar(
+        title: Text(
+          "Apply Vacancy",
+          style: TextStyle(color: AppColors.blue),
         ),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: false,
+        foregroundColor: AppColors.blue,
       ),
       body: Container(
         height: double.infinity,
         width: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/images/himsBackgroundImage2.png"),
+              image: AssetImage("assets/images/himsBackgroundImage3.jpg"),
               fit: BoxFit.cover),
         ),
         child: Padding(
@@ -52,7 +54,8 @@ class ApplyVacancy extends StatelessWidget {
                         Text(
                           title,
                           style: normalStyle.copyWith(
-                              fontWeight: FontWeight.w600, color: Colors.red),
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                         SizedBox(
                           height: 8,

@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hims/features/notice/noticeTabsVIews/noticeCard.dart';
+import 'package:get/route_manager.dart';
+import 'package:hims/features/jobs/applyVacancy.dart';
+import 'package:hims/features/documents/documentsTabsViews/documentsCard.dart';
+import 'package:hims/features/notice/noticeTabsVIews/onClickNotice.dart';
+
+import 'noticeCard.dart';
 
 class NoticeAll extends StatelessWidget {
   List title = [
@@ -32,14 +37,19 @@ class NoticeAll extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: SingleChildScrollView(
-        child: ListView.builder(
-          physics: NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
-          itemCount: title.length,
-          itemBuilder: (BuildContext context, index) => NoticeCard(
-              title: title[index],
-              subtitle: subtitle[index],
-              date: date[index]),
+        child: GestureDetector(
+          onTap: () {
+            Get.to(() => OnClickNotice());
+          },
+          child: ListView.builder(
+            physics: NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            itemCount: title.length,
+            itemBuilder: (BuildContext context, index) => NoticeCard(
+                title: title[index],
+                subtitle: subtitle[index],
+                date: date[index]),
+          ),
         ),
       ),
     );

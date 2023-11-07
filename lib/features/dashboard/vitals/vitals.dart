@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
+import 'package:hims/features/dashboard/vitals/onClickVitals/vitalsBodyWeight.dart';
 import 'package:hims/features/dashboard/vitals/vitalsContainer.dart';
 import 'package:hims/features/dashboard/vitals/vitalsGridView.dart';
 import 'package:hims/shared/theme/colors.dart';
 import 'package:hims/shared/theme/styles.dart';
+
+import 'onClickVitals/vitalsBodyPressure.dart';
 
 class Vitals extends StatelessWidget {
   const Vitals({super.key});

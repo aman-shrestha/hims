@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:hims/features/dashboard/dashboardView.dart';
-import 'package:hims/features/notice/noticeTabsVIews/applyVacancy.dart';
+import 'package:hims/features/login/login.dart';
+import 'package:hims/features/jobs/applyVacancy.dart';
 import 'package:hims/features/notice/noticeView.dart';
 import 'package:hims/features/profile/profile.dart';
 import 'package:hims/features/share/shareView.dart';
@@ -23,9 +25,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Profile(),
+      home: Login(),
       // NoticeView(),
     );
   }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
+import 'package:hims/features/profile/profile.dart';
 
 class ProfileBar extends StatelessWidget {
   final String title;
@@ -21,12 +23,17 @@ class ProfileBar extends StatelessWidget {
       ),
       backgroundColor: Colors.white,
       leading: leading
-          ? Container(
-              width: 32,
-              height: 32,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(100.0),
-                  color: Colors.blue),
+          ? GestureDetector(
+              onTap: () {
+                Get.to(() => Profile());
+              },
+              child: Container(
+                width: 32,
+                height: 32,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100.0),
+                    color: Colors.blue),
+              ),
             )
           : Container(),
       actions: [

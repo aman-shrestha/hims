@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hims/shared/theme/colors.dart';
 
-import '../../../shared/theme/styles.dart';
+import '../../shared/theme/styles.dart';
 
-class SubmitApplicationTextfield extends StatelessWidget {
+class SilverTextfield extends StatelessWidget {
   final String text;
-  const SubmitApplicationTextfield({super.key, required this.text});
+  const SilverTextfield({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class SubmitApplicationTextfield extends StatelessWidget {
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
         hintText: text,
         filled: true,
-        fillColor: Colors.grey.withOpacity(0.5),
+        fillColor: Colors.grey.withOpacity(0.4),
         hintStyle: smallStyle.copyWith(),
         // prefixIcon: prefixIcon: icon,
 

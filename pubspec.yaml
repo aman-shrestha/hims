@@ -41,6 +41,7 @@ dependencies:
   auto_route: ^7.8.4
   file_picker: ^6.0.0
   dotted_border: ^2.1.0
+  get: ^4.6.6
 
 dev_dependencies:
   flutter_test:

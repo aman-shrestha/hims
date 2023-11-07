@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hims/features/notice/noticeTabsVIews/submitApplicationTextfield.dart';
+import 'package:hims/features/jobs/silverTextfield.dart';
 import 'package:hims/shared/theme/colors.dart';
 import 'package:hims/shared/theme/styles.dart';
 import 'package:hims/shared/widgets/buttonLarge.dart';
@@ -47,15 +47,15 @@ class SubmitApplication extends StatelessWidget {
                       SizedBox(
                         height: 40,
                       ),
-                      SubmitApplicationTextfield(text: "text"),
+                      SilverTextfield(text: "text"),
                       SizedBox(
                         height: 16,
                       ),
-                      SubmitApplicationTextfield(text: "text"),
+                      SilverTextfield(text: "text"),
                       SizedBox(
                         height: 16,
                       ),
-                      SubmitApplicationTextfield(text: "text"),
+                      SilverTextfield(text: "text"),
                       SizedBox(
                         height: 28,
                       ),

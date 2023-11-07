@@ -97,7 +97,7 @@ class Profile extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * 0.25,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
-                          color: Colors.amber),
+                          color: Colors.white),
                     ),
                     Positioned(
                       bottom: 80,
@@ -105,7 +105,7 @@ class Profile extends StatelessWidget {
                         children: [
                           Container(
                             width: MediaQuery.of(context).size.width * 0.3,
-                            height: MediaQuery.of(context).size.height * 0.15,
+                            height: MediaQuery.of(context).size.height * 0.14,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(100.0),
                                 color: Colors.blue),

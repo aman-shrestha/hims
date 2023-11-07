@@ -15,7 +15,9 @@ class ButtonLarge extends StatelessWidget {
         color: Color.fromRGBO(38, 92, 192, 1),
       ),
       child: Center(
-        child: Text(text, style: mediumStyle.copyWith(color: Colors.white)),
+        child: Text(text,
+            style: normalStyle.copyWith(
+                color: Colors.white, fontWeight: FontWeight.w500)),
       ),
     );
   }
